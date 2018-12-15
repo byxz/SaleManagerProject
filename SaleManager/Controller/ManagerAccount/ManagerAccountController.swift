@@ -29,6 +29,12 @@ class ManagerAccountController: UIViewController {
     }
     
     
+    @IBAction func SaleList(_ sender: Any) {
+        var myViewController: UIViewController!
+        let storyboard = UIStoryboard(name: "SalesListController", bundle: nil)
+        myViewController = storyboard.instantiateViewController(withIdentifier: "SalesListController")
+        self.present(myViewController, animated: true, completion: nil)
+    }
     @IBAction func NewSale(_ sender: Any) {
         var myViewController: UIViewController!
         let storyboard = UIStoryboard(name: "NewSaleController", bundle: nil)

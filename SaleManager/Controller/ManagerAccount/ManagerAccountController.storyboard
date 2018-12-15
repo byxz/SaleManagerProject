@@ -56,6 +56,13 @@
                                     <action selector="NewSale:" destination="ijX-rK-hYH" eventType="touchUpInside" id="n3m-ke-HtT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLh-nC-Uwt">
+                                <rect key="frame" x="164.5" y="34" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="SaleList:" destination="ijX-rK-hYH" eventType="touchUpInside" id="Wef-e1-kCM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -68,7 +75,9 @@
                             <constraint firstItem="NGq-gJ-2pV" firstAttribute="top" secondItem="U57-h4-M78" secondAttribute="top" id="Gvo-tH-eht"/>
                             <constraint firstItem="U57-h4-M78" firstAttribute="trailing" secondItem="X0J-SE-2PA" secondAttribute="trailing" id="QK7-zj-oAp"/>
                             <constraint firstItem="X0J-SE-2PA" firstAttribute="top" secondItem="U57-h4-M78" secondAttribute="top" constant="59" id="VcU-EA-hT9"/>
+                            <constraint firstItem="JLh-nC-Uwt" firstAttribute="top" secondItem="U57-h4-M78" secondAttribute="top" constant="14" id="ZuB-Vu-GgK"/>
                             <constraint firstItem="U57-h4-M78" firstAttribute="trailing" secondItem="NGq-gJ-2pV" secondAttribute="trailing" constant="30" id="hRD-7U-UVb"/>
+                            <constraint firstItem="JLh-nC-Uwt" firstAttribute="centerX" secondItem="S7z-cm-eZi" secondAttribute="centerX" id="rOt-Co-j2l"/>
                             <constraint firstItem="zgD-H1-Q72" firstAttribute="top" secondItem="U57-h4-M78" secondAttribute="top" constant="16" id="x9a-aJ-Lwd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U57-h4-M78"/>

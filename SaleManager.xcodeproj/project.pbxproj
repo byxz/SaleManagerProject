@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0412C53321C58C1500D1774E /* SalesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0412C53221C58C1500D1774E /* SalesListController.swift */; };
+		0412C53521C58C2600D1774E /* SalesListController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0412C53421C58C2600D1774E /* SalesListController.storyboard */; };
 		0419273F21C2E137003CC11D /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419273E21C2E136003CC11D /* Sales.swift */; };
 		0427342621BD4BA6004B1FCC /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427342521BD4BA6004B1FCC /* Status.swift */; };
 		042D9A5E21AB26C900F62A9E /* TapBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D9A5D21AB26C900F62A9E /* TapBarContoller.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0412C53221C58C1500D1774E /* SalesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesListController.swift; sourceTree = "<group>"; };
+		0412C53421C58C2600D1774E /* SalesListController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SalesListController.storyboard; sourceTree = "<group>"; };
 		0419273E21C2E136003CC11D /* Sales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
 		0427342521BD4BA6004B1FCC /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		042D9A5D21AB26C900F62A9E /* TapBarContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapBarContoller.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0412C53621C58C3800D1774E /* Sales List */ = {
+			isa = PBXGroup;
+			children = (
+				0412C53221C58C1500D1774E /* SalesListController.swift */,
+				0412C53421C58C2600D1774E /* SalesListController.storyboard */,
+			);
+			path = "Sales List";
+			sourceTree = "<group>";
+		};
 		042D9A5F21AB26CF00F62A9E /* Main Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,14 +131,14 @@
 			path = SaleManager;
 			sourceTree = "<group>";
 		};
-		044C89AD21AB0E1700D7A207 /* ProductController */ = {
+		044C89AD21AB0E1700D7A207 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				043403A821A9D9B700F7AAE1 /* ProductController.storyboard */,
 				043403A621A9D9B700F7AAE1 /* ProductController.swift */,
 				0433140F21AB0B930001A93C /* ProductCellCustom.swift */,
+				043403A821A9D9B700F7AAE1 /* ProductController.storyboard */,
 			);
-			path = ProductController;
+			path = Product;
 			sourceTree = "<group>";
 		};
 		044C89B021AB0E6600D7A207 /* Supporting files */ = {
@@ -174,10 +187,11 @@
 			isa = PBXGroup;
 			children = (
 				042D9A5F21AB26CF00F62A9E /* Main Controller */,
-				044C89AD21AB0E1700D7A207 /* ProductController */,
+				044C89AD21AB0E1700D7A207 /* Product */,
 				04B7588C21BC48EA00ED98C7 /* MyAccount */,
-				04B39EB821C038C70092EEF3 /* NewSale */,
 				04B7588F21BC4A1E00ED98C7 /* ManagerAccount */,
+				0412C53621C58C3800D1774E /* Sales List */,
+				04B39EB821C038C70092EEF3 /* NewSale */,
 				04501A6021B4318C000A0C18 /* Auth Controller */,
 			);
 			path = Controller;
@@ -301,6 +315,7 @@
 				04B7589121BC4DBF00ED98C7 /* MyAccountController.storyboard in Resources */,
 				04B39EB721C038A30092EEF3 /* NewSaleController.storyboard in Resources */,
 				04501A6821B43A63000A0C18 /* AuthStoryboard.storyboard in Resources */,
+				0412C53521C58C2600D1774E /* SalesListController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +383,7 @@
 				0427342621BD4BA6004B1FCC /* Status.swift in Sources */,
 				04501A6221B431D0000A0C18 /* LoginViewController.swift in Sources */,
 				04501A6621B4324E000A0C18 /* NetWorker.swift in Sources */,
+				0412C53321C58C1500D1774E /* SalesListController.swift in Sources */,
 				04ED987D21BD76C4003488AC /* ManagerAccountController.swift in Sources */,
 				0433141021AB0B930001A93C /* ProductCellCustom.swift in Sources */,
 				0453441621B85D3000660788 /* FireBaseWorker.swift in Sources */,
