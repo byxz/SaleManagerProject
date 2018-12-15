@@ -7,24 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0419273F21C2E137003CC11D /* Sales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0419273E21C2E136003CC11D /* Sales.swift */; };
+		0427342621BD4BA6004B1FCC /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427342521BD4BA6004B1FCC /* Status.swift */; };
+		042D9A5E21AB26C900F62A9E /* TapBarContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042D9A5D21AB26C900F62A9E /* TapBarContoller.swift */; };
+		0433141021AB0B930001A93C /* ProductCellCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433140F21AB0B930001A93C /* ProductCellCustom.swift */; };
 		043403A521A9D9B700F7AAE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043403A421A9D9B700F7AAE1 /* AppDelegate.swift */; };
-		043403A721A9D9B700F7AAE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043403A621A9D9B700F7AAE1 /* ViewController.swift */; };
-		043403AA21A9D9B700F7AAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043403A821A9D9B700F7AAE1 /* Main.storyboard */; };
-		043403AC21A9D9B800F7AAE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043403AB21A9D9B800F7AAE1 /* Assets.xcassets */; };
+		043403A721A9D9B700F7AAE1 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043403A621A9D9B700F7AAE1 /* ProductController.swift */; };
+		043403AA21A9D9B700F7AAE1 /* ProductController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043403A821A9D9B700F7AAE1 /* ProductController.storyboard */; };
 		043403AF21A9D9B800F7AAE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043403AD21A9D9B800F7AAE1 /* LaunchScreen.storyboard */; };
 		043403B721A9DB8B00F7AAE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 043403B621A9DB8B00F7AAE1 /* GoogleService-Info.plist */; };
+		04501A6221B431D0000A0C18 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04501A6121B431D0000A0C18 /* LoginViewController.swift */; };
+		04501A6421B431D8000A0C18 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04501A6321B431D8000A0C18 /* RegisterViewController.swift */; };
+		04501A6621B4324E000A0C18 /* NetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04501A6521B4324E000A0C18 /* NetWorker.swift */; };
+		04501A6821B43A63000A0C18 /* AuthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04501A6721B43A63000A0C18 /* AuthStoryboard.storyboard */; };
+		04501A6E21B46B2B000A0C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04501A6D21B46B2B000A0C18 /* Assets.xcassets */; };
+		0453441621B85D3000660788 /* FireBaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453441521B85D3000660788 /* FireBaseWorker.swift */; };
+		04B3732121C18796003B52C5 /* NewSaleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3732021C18796003B52C5 /* NewSaleController.swift */; };
+		04B39EB721C038A30092EEF3 /* NewSaleController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B39EB621C038A30092EEF3 /* NewSaleController.storyboard */; };
+		04B7588821BC423A00ED98C7 /* MainBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7588721BC423A00ED98C7 /* MainBase.swift */; };
+		04B7588B21BC48E400ED98C7 /* MyAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7588A21BC48E400ED98C7 /* MyAccountController.swift */; };
+		04B7589121BC4DBF00ED98C7 /* MyAccountController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B7589021BC4DBF00ED98C7 /* MyAccountController.storyboard */; };
+		04B7589321BC5AD700ED98C7 /* AuthStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7589221BC5AD700ED98C7 /* AuthStoryboard.swift */; };
+		04BDC1AB21ADCD4600D9530E /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BDC1AA21ADCD4600D9530E /* TabBarController.storyboard */; };
+		04ED987D21BD76C4003488AC /* ManagerAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED987C21BD76C4003488AC /* ManagerAccountController.swift */; };
+		04ED987F21BD76E1003488AC /* ManagerAccountController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ED987E21BD76E1003488AC /* ManagerAccountController.storyboard */; };
 		484F1EB68468633B5329C86F /* Pods_SaleManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F776999EA75D7D0BEFBF143B /* Pods_SaleManager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0419273E21C2E136003CC11D /* Sales.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sales.swift; sourceTree = "<group>"; };
+		0427342521BD4BA6004B1FCC /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		042D9A5D21AB26C900F62A9E /* TapBarContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapBarContoller.swift; sourceTree = "<group>"; };
+		0433140F21AB0B930001A93C /* ProductCellCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellCustom.swift; sourceTree = "<group>"; };
 		043403A121A9D9B700F7AAE1 /* SaleManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaleManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043403A421A9D9B700F7AAE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		043403A621A9D9B700F7AAE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		043403A921A9D9B700F7AAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		043403AB21A9D9B800F7AAE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043403A621A9D9B700F7AAE1 /* ProductController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
+		043403A921A9D9B700F7AAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProductController.storyboard; sourceTree = "<group>"; };
 		043403AE21A9D9B800F7AAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043403B021A9D9B800F7AAE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043403B621A9DB8B00F7AAE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04501A6121B431D0000A0C18 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04501A6321B431D8000A0C18 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		04501A6521B4324E000A0C18 /* NetWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorker.swift; sourceTree = "<group>"; };
+		04501A6721B43A63000A0C18 /* AuthStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthStoryboard.storyboard; sourceTree = "<group>"; };
+		04501A6D21B46B2B000A0C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0453441521B85D3000660788 /* FireBaseWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseWorker.swift; sourceTree = "<group>"; };
+		04B3732021C18796003B52C5 /* NewSaleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSaleController.swift; sourceTree = "<group>"; };
+		04B39EB621C038A30092EEF3 /* NewSaleController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewSaleController.storyboard; sourceTree = "<group>"; };
+		04B7588721BC423A00ED98C7 /* MainBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBase.swift; sourceTree = "<group>"; };
+		04B7588921BC435D00ED98C7 /* SaleManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaleManager.entitlements; sourceTree = "<group>"; };
+		04B7588A21BC48E400ED98C7 /* MyAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountController.swift; sourceTree = "<group>"; };
+		04B7589021BC4DBF00ED98C7 /* MyAccountController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyAccountController.storyboard; sourceTree = "<group>"; };
+		04B7589221BC5AD700ED98C7 /* AuthStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStoryboard.swift; sourceTree = "<group>"; };
+		04BDC1AA21ADCD4600D9530E /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		04ED987C21BD76C4003488AC /* ManagerAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerAccountController.swift; sourceTree = "<group>"; };
+		04ED987E21BD76E1003488AC /* ManagerAccountController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagerAccountController.storyboard; sourceTree = "<group>"; };
 		1ECD2F3797C91EED084E19C6 /* Pods-SaleManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaleManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaleManager/Pods-SaleManager.release.xcconfig"; sourceTree = "<group>"; };
 		EDDCE85BA6B40D774A78E054 /* Pods-SaleManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaleManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaleManager/Pods-SaleManager.debug.xcconfig"; sourceTree = "<group>"; };
 		F776999EA75D7D0BEFBF143B /* Pods_SaleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042D9A5F21AB26CF00F62A9E /* Main Controller */ = {
+			isa = PBXGroup;
+			children = (
+				042D9A5D21AB26C900F62A9E /* TapBarContoller.swift */,
+				04BDC1AA21ADCD4600D9530E /* TabBarController.storyboard */,
+			);
+			path = "Main Controller";
+			sourceTree = "<group>";
+		};
 		0434039821A9D9B700F7AAE1 = {
 			isa = PBXGroup;
 			children = (
@@ -63,15 +109,105 @@
 		043403A321A9D9B700F7AAE1 /* SaleManager */ = {
 			isa = PBXGroup;
 			children = (
-				043403A421A9D9B700F7AAE1 /* AppDelegate.swift */,
-				043403A621A9D9B700F7AAE1 /* ViewController.swift */,
-				043403A821A9D9B700F7AAE1 /* Main.storyboard */,
-				043403AB21A9D9B800F7AAE1 /* Assets.xcassets */,
-				043403AD21A9D9B800F7AAE1 /* LaunchScreen.storyboard */,
-				043403B621A9DB8B00F7AAE1 /* GoogleService-Info.plist */,
-				043403B021A9D9B800F7AAE1 /* Info.plist */,
+				04B7588921BC435D00ED98C7 /* SaleManager.entitlements */,
+				04B7588521BC41CE00ED98C7 /* Model */,
+				04FEA64421AC7A910000CE73 /* Service */,
+				04B7588621BC41E700ED98C7 /* Controller */,
+				044C89B021AB0E6600D7A207 /* Supporting files */,
 			);
 			path = SaleManager;
+			sourceTree = "<group>";
+		};
+		044C89AD21AB0E1700D7A207 /* ProductController */ = {
+			isa = PBXGroup;
+			children = (
+				043403A821A9D9B700F7AAE1 /* ProductController.storyboard */,
+				043403A621A9D9B700F7AAE1 /* ProductController.swift */,
+				0433140F21AB0B930001A93C /* ProductCellCustom.swift */,
+			);
+			path = ProductController;
+			sourceTree = "<group>";
+		};
+		044C89B021AB0E6600D7A207 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				043403A421A9D9B700F7AAE1 /* AppDelegate.swift */,
+				043403AD21A9D9B800F7AAE1 /* LaunchScreen.storyboard */,
+				043403B621A9DB8B00F7AAE1 /* GoogleService-Info.plist */,
+				04501A6D21B46B2B000A0C18 /* Assets.xcassets */,
+				043403B021A9D9B800F7AAE1 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		04501A6021B4318C000A0C18 /* Auth Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B7589221BC5AD700ED98C7 /* AuthStoryboard.swift */,
+				04501A6121B431D0000A0C18 /* LoginViewController.swift */,
+				04501A6321B431D8000A0C18 /* RegisterViewController.swift */,
+				04501A6721B43A63000A0C18 /* AuthStoryboard.storyboard */,
+			);
+			path = "Auth Controller";
+			sourceTree = "<group>";
+		};
+		04B39EB821C038C70092EEF3 /* NewSale */ = {
+			isa = PBXGroup;
+			children = (
+				04B3732021C18796003B52C5 /* NewSaleController.swift */,
+				04B39EB621C038A30092EEF3 /* NewSaleController.storyboard */,
+			);
+			path = NewSale;
+			sourceTree = "<group>";
+		};
+		04B7588521BC41CE00ED98C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04B7588721BC423A00ED98C7 /* MainBase.swift */,
+				0427342521BD4BA6004B1FCC /* Status.swift */,
+				0419273E21C2E136003CC11D /* Sales.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B7588621BC41E700ED98C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				042D9A5F21AB26CF00F62A9E /* Main Controller */,
+				044C89AD21AB0E1700D7A207 /* ProductController */,
+				04B7588C21BC48EA00ED98C7 /* MyAccount */,
+				04B39EB821C038C70092EEF3 /* NewSale */,
+				04B7588F21BC4A1E00ED98C7 /* ManagerAccount */,
+				04501A6021B4318C000A0C18 /* Auth Controller */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B7588C21BC48EA00ED98C7 /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				04B7588A21BC48E400ED98C7 /* MyAccountController.swift */,
+				04B7589021BC4DBF00ED98C7 /* MyAccountController.storyboard */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		04B7588F21BC4A1E00ED98C7 /* ManagerAccount */ = {
+			isa = PBXGroup;
+			children = (
+				04ED987C21BD76C4003488AC /* ManagerAccountController.swift */,
+				04ED987E21BD76E1003488AC /* ManagerAccountController.storyboard */,
+			);
+			path = ManagerAccount;
+			sourceTree = "<group>";
+		};
+		04FEA64421AC7A910000CE73 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0453441521B85D3000660788 /* FireBaseWorker.swift */,
+				04501A6521B4324E000A0C18 /* NetWorker.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		70BEB21D1B4B56F307A9A7E2 /* Frameworks */ = {
@@ -125,6 +261,11 @@
 				TargetAttributes = {
 					043403A021A9D9B700F7AAE1 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -151,10 +292,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04ED987F21BD76E1003488AC /* ManagerAccountController.storyboard in Resources */,
 				043403AF21A9D9B800F7AAE1 /* LaunchScreen.storyboard in Resources */,
 				043403B721A9DB8B00F7AAE1 /* GoogleService-Info.plist in Resources */,
-				043403AC21A9D9B800F7AAE1 /* Assets.xcassets in Resources */,
-				043403AA21A9D9B700F7AAE1 /* Main.storyboard in Resources */,
+				04BDC1AB21ADCD4600D9530E /* TabBarController.storyboard in Resources */,
+				043403AA21A9D9B700F7AAE1 /* ProductController.storyboard in Resources */,
+				04501A6E21B46B2B000A0C18 /* Assets.xcassets in Resources */,
+				04B7589121BC4DBF00ED98C7 /* MyAccountController.storyboard in Resources */,
+				04B39EB721C038A30092EEF3 /* NewSaleController.storyboard in Resources */,
+				04501A6821B43A63000A0C18 /* AuthStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,16 +334,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SaleManager/Pods-SaleManager-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,20 +356,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043403A721A9D9B700F7AAE1 /* ViewController.swift in Sources */,
+				04501A6421B431D8000A0C18 /* RegisterViewController.swift in Sources */,
+				04B7588B21BC48E400ED98C7 /* MyAccountController.swift in Sources */,
+				042D9A5E21AB26C900F62A9E /* TapBarContoller.swift in Sources */,
+				04B3732121C18796003B52C5 /* NewSaleController.swift in Sources */,
+				043403A721A9D9B700F7AAE1 /* ProductController.swift in Sources */,
+				0419273F21C2E137003CC11D /* Sales.swift in Sources */,
 				043403A521A9D9B700F7AAE1 /* AppDelegate.swift in Sources */,
+				04B7589321BC5AD700ED98C7 /* AuthStoryboard.swift in Sources */,
+				04B7588821BC423A00ED98C7 /* MainBase.swift in Sources */,
+				0427342621BD4BA6004B1FCC /* Status.swift in Sources */,
+				04501A6221B431D0000A0C18 /* LoginViewController.swift in Sources */,
+				04501A6621B4324E000A0C18 /* NetWorker.swift in Sources */,
+				04ED987D21BD76C4003488AC /* ManagerAccountController.swift in Sources */,
+				0433141021AB0B930001A93C /* ProductCellCustom.swift in Sources */,
+				0453441621B85D3000660788 /* FireBaseWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		043403A821A9D9B700F7AAE1 /* Main.storyboard */ = {
+		043403A821A9D9B700F7AAE1 /* ProductController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				043403A921A9D9B700F7AAE1 /* Base */,
 			);
-			name = Main.storyboard;
+			name = ProductController.storyboard;
 			sourceTree = "<group>";
 		};
 		043403AD21A9D9B800F7AAE1 /* LaunchScreen.storyboard */ = {
@@ -362,12 +519,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T43MEX2BM7;
-				INFOPLIST_FILE = SaleManager/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SaleManager/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = byxz.SaleManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.byxz.SaleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,12 +538,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T43MEX2BM7;
-				INFOPLIST_FILE = SaleManager/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SaleManager/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = byxz.SaleManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.byxz.SaleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
