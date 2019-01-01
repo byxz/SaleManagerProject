@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>727630613810-2g1sr1s94tje70rvddb1f2o3n1fee35k.apps.googleusercontent.com</string>
+	<string>122429636028-qskof68mp4fiqsn3cbvcna8l5ilmd4pq.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.727630613810-2g1sr1s94tje70rvddb1f2o3n1fee35k</string>
+	<string>com.googleusercontent.apps.122429636028-qskof68mp4fiqsn3cbvcna8l5ilmd4pq</string>
 	<key>API_KEY</key>
-	<string>AIzaSyC0ryR0yrpQO02vnNcx0X_ydMOib6igJNk</string>
+	<string>AIzaSyC3oKE_2uGAddyaMQonyIPMrgkO1z_1f6o</string>
 	<key>GCM_SENDER_ID</key>
-	<string>727630613810</string>
+	<string>122429636028</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.byxz.SaleManager</string>
+	<string>com.nugumanovDmitry.SaleManager</string>
 	<key>PROJECT_ID</key>
-	<string>salemanager-8301c</string>
+	<string>salemanager-f3b59</string>
 	<key>STORAGE_BUCKET</key>
-	<string>salemanager-8301c.appspot.com</string>
+	<string>salemanager-f3b59.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:727630613810:ios:209a39b3359ac695</string>
+	<string>1:122429636028:ios:1343c374d35798a1</string>
 	<key>DATABASE_URL</key>
-	<string>https://salemanager-8301c.firebaseio.com</string>
+	<string>https://salemanager-f3b59.firebaseio.com</string>
 </dict>
 </plist>

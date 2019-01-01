@@ -17,7 +17,7 @@ struct MainBase {
     let quantity: Int
     let price: String
     let image: String
-    //var isTrue: Bool
+//    var isSaleStatus: Bool
     
     init(titel: String, quantity: Int, price: String, image: String, key: String = "") {
         self.ref = nil
@@ -26,7 +26,7 @@ struct MainBase {
         self.quantity = quantity
         self.price = price
         self.image = image
-        //self.isTrue = isTrue
+//        self.isSaleStatus = isSaleStatus
     }
     
     init?(snapshot: DataSnapshot) {
@@ -36,7 +36,7 @@ struct MainBase {
             let quantity = value["quantity"] as? Int,
             let price = value["price"] as? String,
             let image = value["image"] as? String
-            //let isTrue = value["isTrue"] as? Bool
+        
             else {
                 return nil
         }
@@ -47,7 +47,7 @@ struct MainBase {
         self.quantity = quantity
         self.price = price
         self.image = image
-        //self.isTrue = isTrue
+        
     }
     
     func toAnyObject() -> Any {
@@ -56,7 +56,7 @@ struct MainBase {
             "quantity": quantity,
             "price": price,
             "image": image,
-            //"isTrue": isTrue
+            
         ]
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NEQ-Iz-Pgf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--Создание новой накладной-->
         <scene sceneID="ZYG-U1-0RU">
             <objects>
-                <tableViewController id="NEQ-Iz-Pgf" customClass="NewSaleController" customModule="SaleManager" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NewSaleController" id="NEQ-Iz-Pgf" customClass="NewSaleController" customModule="SaleManager" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fIk-Sa-C68">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,24 +373,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tPp-ml-4Zj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1911.2" y="97.601199400299862"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="kgU-B3-FoP">
-            <objects>
-                <navigationController storyboardIdentifier="NewSaleController" automaticallyAdjustsScrollViewInsets="NO" id="uKs-bz-ScL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xDm-fQ-MQu">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="NEQ-Iz-Pgf" kind="relationship" relationship="rootViewController" id="o9e-WB-Beb"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dUi-aF-Qqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-786.39999999999998" y="115.59220389805098"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gw2-ny-1fe">

@@ -36,6 +36,13 @@ class RegisterViewController: UIViewController {
         check()
     }
     
+    @IBAction func openLoginViewTapped(_ sender: UIButton) {
+        
+        
+    }
+    
+    
+    
     // cancellation of registration and return to the previous screen
     @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)

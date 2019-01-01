@@ -56,7 +56,9 @@
                                                     <constraints>
                                                         <constraint firstItem="NGB-22-HcQ" firstAttribute="centerY" secondItem="LgH-Oh-raM" secondAttribute="centerY" id="1UF-7w-xyj"/>
                                                         <constraint firstAttribute="bottom" secondItem="vhT-Kh-j5k" secondAttribute="bottom" constant="10" id="LKs-EW-qeQ"/>
+                                                        <constraint firstItem="NGB-22-HcQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="auR-kM-Wyg" secondAttribute="trailing" constant="8" symbolic="YES" id="N0K-iB-wMn"/>
                                                         <constraint firstItem="vhT-Kh-j5k" firstAttribute="leading" secondItem="auR-kM-Wyg" secondAttribute="leading" id="QHk-iz-8Jg"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vhT-Kh-j5k" secondAttribute="trailing" constant="20" symbolic="YES" id="XH8-4f-Rjp"/>
                                                         <constraint firstItem="auR-kM-Wyg" firstAttribute="leading" secondItem="LgH-Oh-raM" secondAttribute="leading" constant="25" id="jrL-be-xpf"/>
                                                         <constraint firstItem="NGB-22-HcQ" firstAttribute="centerX" secondItem="LgH-Oh-raM" secondAttribute="centerX" id="lCb-mL-sUZ"/>
                                                         <constraint firstItem="vhT-Kh-j5k" firstAttribute="top" secondItem="auR-kM-Wyg" secondAttribute="bottom" constant="3" id="xuE-5H-qW8"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hok-95-ThY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -87,10 +87,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VqU-hg-Jd1"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dvF-ND-muw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9d8-XR-Up8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="-248"/>
+            <point key="canvasLocation" x="944.79999999999995" y="-248.72563718140933"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Vky-yG-xko">
@@ -185,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcu-mt-TSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892" y="-247.82608695652175"/>
+            <point key="canvasLocation" x="1831.2" y="-247.82608695652175"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="0Is-hh-lvT">
@@ -233,6 +234,9 @@
                                         <state key="normal" title="Войти.">
                                             <color key="titleColor" red="0.066656596959999995" green="0.066673092540000006" blue="0.066652975980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="openLoginViewTapped:" destination="eQb-rc-wEM" eventType="touchUpInside" id="DXl-wl-Ti9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -309,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjh-ko-TpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1568.8" y="-248.72563718140933"/>
+            <point key="canvasLocation" x="2508" y="-248.72563718140933"/>
         </scene>
     </scenes>
     <resources>

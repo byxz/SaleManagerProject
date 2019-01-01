@@ -21,10 +21,28 @@ class NewSaleController: UITableViewController {
     @IBOutlet var commentField: UITextField!
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.barTintColor = .clear
+        setupNavigationBar()
+        
+    }
+    
+    func setupNavigationBar() {
+    navigationController?.navigationBar.barTintColor = .white
+    }
+    
+    @objc func back() {
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func saveAction(_ sender: Any) {
         
         worker.saveDataSales(surname: surnameField.text!, name: nameField.text!, tel: telField.text!, post: postField.text!)
+        dismiss(animated: true, completion: nil)
     }
+    
     
     
     

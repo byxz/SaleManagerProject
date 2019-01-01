@@ -15,16 +15,9 @@ class TapBarContoller: UITabBarController, UITabBarControllerDelegate {
         
         let productController = setupTabBarElement(StoryboardName: "ProductController", Identifier: "ProductController", titel: "Каталог", image: "profile")
         
-        
-        
         let myAccountController = setupTabBarElement(StoryboardName: "ManagerAccountController", Identifier: "ManagerAccountController", titel: "Мой аккаунт", image: "profile")
         
-        
-        
-        
         viewControllers = [productController,myAccountController]
-        
-        
         
         let myTabBarItem1 = (self.tabBar.items?[0])! as UITabBarItem
         myTabBarItem1.image = UIImage(named: "shopping")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
@@ -37,9 +30,6 @@ class TapBarContoller: UITabBarController, UITabBarControllerDelegate {
         myTabBarItem2.selectedImage = UIImage(named: "profileSelected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         //myTabBarItem2.title = "Профиль"
         myTabBarItem2.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-        
-        
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -80,6 +70,8 @@ class TapBarContoller: UITabBarController, UITabBarControllerDelegate {
     
     func setupTabBarElement(StoryboardName: String, Identifier: String, titel: String, image: String) -> UIViewController {
         var myViewController: UIViewController!
+        
+        
         let storyboard = UIStoryboard(name: StoryboardName, bundle: nil)
         myViewController = storyboard.instantiateViewController(withIdentifier: Identifier)
         

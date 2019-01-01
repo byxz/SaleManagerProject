@@ -46,15 +46,16 @@ class MyAccountController: UIViewController {
     }
     
     func userCheckDELET() {
-        Auth.auth().addStateDidChangeListener() { auth, user in
+        Auth.auth().addStateDidChangeListener() {[weak self] auth, user in
             if user != nil {
                 print("Логин получен")
             } else {
                 print("Пользователя с таким логином нет, идем на регистрацию")
-                var myViewController: UIViewController!
-                let storyboard = UIStoryboard(name: "AuthStoryboard", bundle: nil)
-                myViewController = storyboard.instantiateViewController(withIdentifier: "AuthStoryboard")
-                self.present(myViewController, animated: true, completion: nil)
+                self?.transitionToViewController(name: "AuthStoryboard")
+//                var myViewController: UIViewController!
+//                let storyboard = UIStoryboard(name: "AuthStoryboard", bundle: nil)
+//                myViewController = storyboard.instantiateViewController(withIdentifier: "AuthStoryboard")
+//                self.present(myViewController, animated: true, completion: nil)
             }
             if let user = user {
                 if user.email == "test@gmail.com" {
@@ -70,11 +71,7 @@ class MyAccountController: UIViewController {
                 print("MyAccount Логин получен")
             } else {
                 print("MyAccount Пользователя с таким логином нет, идем на регистрацию")
-                var myViewController: UIViewController!
-                let storyboard = UIStoryboard(name: "AuthStoryboard", bundle: nil)
-                myViewController = storyboard.instantiateViewController(withIdentifier: "AuthStoryboard")
-                self.present(myViewController, animated: true, completion: nil)
-            
+                transitionToViewController(name: "AuthStoryboard")
         }
     }
     
