@@ -22,4 +22,11 @@ extension UIViewController {
         myViewController = storyboard.instantiateViewController(withIdentifier: viewcontroller)
         present(myViewController, animated: true, completion: nil)
     }
+    
+    func transitionPushToViewController(name viewcontroller: String) {
+        let storyboard = UIStoryboard(name: viewcontroller, bundle: nil)
+        let secondVC = storyboard.instantiateViewController(withIdentifier: viewcontroller)
+        self.navigationController?.pushViewController(secondVC, animated: true)
+    }
+    
 }

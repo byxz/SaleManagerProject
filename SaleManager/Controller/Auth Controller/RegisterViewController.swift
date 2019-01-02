@@ -37,7 +37,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func openLoginViewTapped(_ sender: UIButton) {
-        
+        dismiss(animated: true, completion: nil)
         
     }
     

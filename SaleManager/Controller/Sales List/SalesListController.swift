@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 class SalesListController: UIViewController {
     
     // MARK: Interface outlets
@@ -21,8 +20,9 @@ class SalesListController: UIViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tabBarController?.tabBar.isHidden = true
         worker.getDataSales(tableView: mainTable)
-        setupNavigationBar()
     }
     
     //MARK: Action funcs
@@ -30,15 +30,7 @@ class SalesListController: UIViewController {
     
     //MARK: public funcs
     
-    func setupNavigationBar() {
-        navigationController?.navigationBar.barTintColor = .white
-        let backItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(back))
-        self.navigationItem.leftBarButtonItem = backItem
-    }
-    
-    @objc func back() {
-        dismiss(animated: true, completion: nil)
-    }
+  
     
 }
 

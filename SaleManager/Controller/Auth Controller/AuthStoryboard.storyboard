@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hok-95-ThY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f8m-5e-hbV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,93 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Auth Storyboard-->
-        <scene sceneID="ebe-AQ-EAc">
-            <objects>
-                <viewController storyboardIdentifier="AuthStoryboard" id="hok-95-ThY" customClass="AuthStoryboard" customModule="SaleManager" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qe2-1h-9R3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ygq-Yp-KLr">
-                                <rect key="frame" x="22.5" y="581" width="330" height="40"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRV-ok-vRR">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="qOF-o8-L5r"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="ВОЙТИ">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="f8m-5e-hbV" kind="presentation" id="85Z-09-jdY"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3a-Sw-dp9">
-                                        <rect key="frame" x="190" y="0.0" width="140" height="40"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="wns-QU-LMV"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="РЕГИСТРАЦИЯ">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="eQb-rc-wEM" kind="presentation" id="b2Z-5H-xbJ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="eRV-ok-vRR" firstAttribute="width" secondItem="O3a-Sw-dp9" secondAttribute="width" id="R68-4K-NTl"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBb-hd-ff9">
-                                <rect key="frame" x="116.5" y="629" width="142" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="Продолжить как Гость">
-                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="continueAsGuest:" destination="hok-95-ThY" eventType="touchUpInside" id="aOV-OP-LKA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsb-Dj-djE">
-                                <rect key="frame" x="335" y="35" width="25" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="iI4-NB-8XW"/>
-                                    <constraint firstAttribute="width" constant="25" id="ulY-RV-tWv"/>
-                                </constraints>
-                                <state key="normal" image="closeBlack"/>
-                                <connections>
-                                    <action selector="disMiss:" destination="hok-95-ThY" eventType="touchUpInside" id="phX-yT-MiN"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="aBb-hd-ff9" firstAttribute="centerX" secondItem="qe2-1h-9R3" secondAttribute="centerX" id="455-DJ-fOv"/>
-                            <constraint firstItem="VqU-hg-Jd1" firstAttribute="trailing" secondItem="zsb-Dj-djE" secondAttribute="trailing" constant="15" id="Pno-fv-2Yo"/>
-                            <constraint firstItem="VqU-hg-Jd1" firstAttribute="bottom" secondItem="aBb-hd-ff9" secondAttribute="bottom" constant="10" id="R0k-JF-wBq"/>
-                            <constraint firstItem="ygq-Yp-KLr" firstAttribute="centerX" secondItem="qe2-1h-9R3" secondAttribute="centerX" id="Z2Y-ld-W2V"/>
-                            <constraint firstItem="zsb-Dj-djE" firstAttribute="top" secondItem="VqU-hg-Jd1" secondAttribute="top" constant="15" id="aKF-WO-dkd"/>
-                            <constraint firstItem="aBb-hd-ff9" firstAttribute="top" secondItem="ygq-Yp-KLr" secondAttribute="bottom" constant="8" id="aZe-8o-eTl"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="VqU-hg-Jd1"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="dvF-ND-muw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9d8-XR-Up8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="944.79999999999995" y="-248.72563718140933"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="Vky-yG-xko">
             <objects>
-                <viewController id="f8m-5e-hbV" customClass="LoginViewController" customModule="SaleManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="f8m-5e-hbV" customClass="LoginViewController" customModule="SaleManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bBi-gL-mcv" customClass="UIScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,6 +73,9 @@
                                         </state>
                                         <connections>
                                             <action selector="JoinTapped:" destination="f8m-5e-hbV" eventType="touchUpInside" id="N1V-r2-OGV"/>
+                                            <segue destination="eQb-rc-wEM" kind="popoverPresentation" popoverAnchorView="cEW-qF-H32" id="PFm-A2-GUs">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -313,10 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjh-ko-TpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2508" y="-248.72563718140933"/>
+            <point key="canvasLocation" x="2740" y="-249"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="closeBlack" width="100" height="100"/>
-    </resources>
 </document>

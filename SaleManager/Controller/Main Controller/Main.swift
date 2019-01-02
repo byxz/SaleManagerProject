@@ -1,8 +1,9 @@
 //
 //  Main.swift
-//
+//  SaleManager
 //
 //  Created by Evgeniy Opryshko on 01/01/2019.
+//  Copyright © 2019 com.sales.my. All rights reserved.
 //
 
 import UIKit
@@ -32,18 +33,22 @@ class Main: UIViewController {
         
         let manager = createNavController(controller: Controller.init(storyboard: "ManagerAccountController", identifier: "ManagerAccountController", image: "profile", selectedImage: "profileSelected"))
         
-        let login = createNavController(controller: Controller.init(storyboard: "AuthStoryboard", identifier: "AuthStoryboard", image: "profile", selectedImage: "profileSelected"))
+        let login = createNavController(controller: Controller.init(storyboard: "AuthStoryboard", identifier: "LoginViewController", image: "profile", selectedImage: "profileSelected"))
         
         Auth.auth().addStateDidChangeListener() { auth, user in
-            if user != nil {
-                let controllerArray = [product, manager]
-                self.tabBarCnt.viewControllers = controllerArray.map{ UINavigationController.init(rootViewController: $0)}
-                print("controllerArray = [product, manager]")
+    
+            if let user = user {
+                if user.email == "user@i.ua" {
+                    let controllerArray = [product, manager]
+                    self.tabBarCnt.viewControllers = controllerArray.map{ UINavigationController.init(rootViewController: $0)}
+                    print("controllerArray = [product, manager]")
+                }
             } else {
                 let controllerArray = [product, login]
                 print("controllerArray = [product, login]")
                 self.tabBarCnt.viewControllers = controllerArray.map{ UINavigationController.init(rootViewController: $0)}
             }
+            
             
         }
         

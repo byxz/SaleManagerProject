@@ -12,40 +12,58 @@ import Firebase
 
 class NewSaleController: UITableViewController {
     
-    let worker = FireBaseWorker()
-    
+    // MARK: Interface outlets
     @IBOutlet var surnameField: UITextField!
     @IBOutlet var nameField: UITextField!
     @IBOutlet var telField: UITextField!
     @IBOutlet var postField: UITextField!
     @IBOutlet var commentField: UITextField!
     
+    // MARK: Instance variables/constants
+    let worker = FireBaseWorker()
+    
+    
+    // MARK: Lifecycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = .clear
-        setupNavigationBar()
+        
+        tabBarController?.tabBar.isHidden = true
+    }
+    
+    //MARK: Configurations
+    //func configureUI()
+    
+    
+    //MARK: Action funcs
+
+    
+    
+    //MARK: AnyProtocol (ex. UITableViewDelegate)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath)
+        
+        switch (indexPath.section, indexPath.row) {
+        case (1,0):
+            //TODO: Verification
+            worker.saveDataSales(surname: surnameField.text!, name: nameField.text!, tel: telField.text!, post: postField.text!)
+            navigationController?.dismiss(navigationController: self.navigationController!)
+        default:
+            print("Default")
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
         
     }
     
-    func setupNavigationBar() {
-    navigationController?.navigationBar.barTintColor = .white
-    }
+    //MARK: Any other protocol
+    //func myFuncFromOtherProtocol()
     
-    @objc func back() {
-        
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func saveAction(_ sender: Any) {
-        
-        worker.saveDataSales(surname: surnameField.text!, name: nameField.text!, tel: telField.text!, post: postField.text!)
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-    
-    
+    //MARK: Navigation
     
 }
 
