@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class nameProductListForInvoiceCellCustome: UITableViewCell {
+class NameProductListForInvoiceCellCustome: UITableViewCell {
     
     @IBOutlet var titel: UILabel!
     @IBOutlet var quantity: UILabel!
@@ -18,5 +18,20 @@ class nameProductListForInvoiceCellCustome: UITableViewCell {
     
     @IBOutlet weak var addProduct: UIButton!
     @IBOutlet weak var count: UILabel!
+    
+    func configureImage(dataImage: String) {
+        if let imageURL = URL(string: dataImage) {
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: imageURL)
+                if let data = data {
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        self.imageProduct.image = image
+                        
+                    }
+                }
+            }
+        }
+    }
     
 }

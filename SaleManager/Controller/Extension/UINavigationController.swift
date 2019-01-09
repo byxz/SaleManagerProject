@@ -16,7 +16,7 @@ extension UINavigationController {
     ///   - navigationController
     
     
-    func dismiss(navigationController: UINavigationController) {
+    func dismiss(_ navigationController: UINavigationController) {
         navigationController.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }

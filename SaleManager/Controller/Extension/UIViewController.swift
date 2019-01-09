@@ -29,4 +29,10 @@ extension UIViewController {
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
+    func transitionPushToViewControllerTest(stroryboard: String, viewController: String) {
+        let storyboard = UIStoryboard(name: stroryboard, bundle: nil)
+        let secondVC = storyboard.instantiateViewController(withIdentifier: viewController)
+        self.navigationController?.pushViewController(secondVC, animated: true)
+    }
+    
 }

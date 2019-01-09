@@ -18,12 +18,14 @@ class ManagerAccountController: UITableViewController {
     @IBOutlet weak var chartView: BarChartView!
     
     // MARK: Instance variables/constants
+    //let navigation = UINavigationController()
     let fireBaseWorker = FireBaseWorker()
     let chart = ChartController()
     
     // MARK: Lifecycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        tableView.tableFooterView = UIView()
         
         tabBarController?.tabBar.isHidden = false
     }
@@ -33,7 +35,16 @@ class ManagerAccountController: UITableViewController {
         
         fireBaseWorker.chartDB()
         chartView.contentMode = .scaleAspectFit
-        tableView.tableFooterView = UIView()
+        tableView.customeStule(self.tableView)
+        
+        //Black style navigation
+        let backItem = UIBarButtonItem()
+        backItem.title = " "
+        navigationItem.backBarButtonItem = backItem
+        navigationItem.title = "Кабинет менеджера"
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -60,6 +71,10 @@ class ManagerAccountController: UITableViewController {
             cell.textLabel?.text = "Создать накладную"
         case (1,1):
             cell.textLabel?.text = "Список продаж"
+        case (1,2):
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+        case (2,0):
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
         default:
             print("Default")
         }
@@ -77,6 +92,7 @@ class ManagerAccountController: UITableViewController {
             transitionPushToViewController(name: "SalesListController")
         case (2,0):
             fireBaseWorker.signOut()
+            
         default:
             print("Default")
         }

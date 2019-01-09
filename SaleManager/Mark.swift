@@ -19,7 +19,7 @@
  // MARK: class functions
  static func instantiateViewController() -> ViewController
  
- // MARK: Lifecycle
+ //MARK: UIViewController lifecycle
  viewDidLoad, viewDidAppear....
  
  //MARK: Configurations

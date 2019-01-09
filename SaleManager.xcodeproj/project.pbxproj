@@ -40,6 +40,10 @@
 		492BB14821DBCFA500075915 /* ProductListForInvoiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BB14721DBCFA500075915 /* ProductListForInvoiceController.swift */; };
 		492BB14A21DBE0E500075915 /* ProductListForInvoiceCellCustome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BB14921DBE0E500075915 /* ProductListForInvoiceCellCustome.swift */; };
 		492BB14C21DBEE3A00075915 /* ProductListDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BB14B21DBEE3A00075915 /* ProductListDetailController.swift */; };
+		4999EA6321E28ACD001F7B02 /* ProductListDetailCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999EA6221E28ACD001F7B02 /* ProductListDetailCustomCell.swift */; };
+		49A3653021DCF66E00C99C30 /* UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3652F21DCF66E00C99C30 /* UITableViewController.swift */; };
+		49D8190E21E1111600E7386F /* SalesFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8190D21E1111600E7386F /* SalesFilterController.swift */; };
+		49D8191021E117BF00E7386F /* SalesInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8190F21E117BF00E7386F /* SalesInformationController.swift */; };
 		7B4BE9AB21D575C600259DC2 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4BE9AA21D575C600259DC2 /* Mark.swift */; };
 		7B65EC0621CEB490005E913E /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B65EC0521CEB490005E913E /* ChartController.swift */; };
 		7B7E934F21D3A11300F96C85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B7E934E21D3A11300F96C85 /* GoogleService-Info.plist */; };
@@ -84,6 +88,10 @@
 		492BB14721DBCFA500075915 /* ProductListForInvoiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListForInvoiceController.swift; sourceTree = "<group>"; };
 		492BB14921DBE0E500075915 /* ProductListForInvoiceCellCustome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListForInvoiceCellCustome.swift; sourceTree = "<group>"; };
 		492BB14B21DBEE3A00075915 /* ProductListDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDetailController.swift; sourceTree = "<group>"; };
+		4999EA6221E28ACD001F7B02 /* ProductListDetailCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListDetailCustomCell.swift; sourceTree = "<group>"; };
+		49A3652F21DCF66E00C99C30 /* UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewController.swift; sourceTree = "<group>"; };
+		49D8190D21E1111600E7386F /* SalesFilterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesFilterController.swift; sourceTree = "<group>"; };
+		49D8190F21E117BF00E7386F /* SalesInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesInformationController.swift; sourceTree = "<group>"; };
 		7B4BE9AA21D575C600259DC2 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
 		7B65EC0521CEB490005E913E /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
 		7B7E934E21D3A11300F96C85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -109,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				0412C53221C58C1500D1774E /* SalesListController.swift */,
+				49D8190F21E117BF00E7386F /* SalesInformationController.swift */,
+				49D8190D21E1111600E7386F /* SalesFilterController.swift */,
 				0412C53421C58C2600D1774E /* SalesListController.storyboard */,
 			);
 			path = "Sales List";
@@ -198,6 +208,7 @@
 				492BB14721DBCFA500075915 /* ProductListForInvoiceController.swift */,
 				492BB14921DBE0E500075915 /* ProductListForInvoiceCellCustome.swift */,
 				492BB14B21DBEE3A00075915 /* ProductListDetailController.swift */,
+				4999EA6221E28ACD001F7B02 /* ProductListDetailCustomCell.swift */,
 			);
 			path = NewSale;
 			sourceTree = "<group>";
@@ -277,6 +288,7 @@
 			children = (
 				7BF6D7A521C7CC6300723AB0 /* UIViewController.swift */,
 				492BB14521DB98AE00075915 /* UINavigationController.swift */,
+				49A3652F21DCF66E00C99C30 /* UITableViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -431,12 +443,15 @@
 				043403A721A9D9B700F7AAE1 /* ProductController.swift in Sources */,
 				0419273F21C2E137003CC11D /* Sales.swift in Sources */,
 				043403A521A9D9B700F7AAE1 /* AppDelegate.swift in Sources */,
+				49D8191021E117BF00E7386F /* SalesInformationController.swift in Sources */,
 				492BB14C21DBEE3A00075915 /* ProductListDetailController.swift in Sources */,
 				04B7589321BC5AD700ED98C7 /* AuthStoryboard.swift in Sources */,
 				04B7588821BC423A00ED98C7 /* MainBase.swift in Sources */,
 				7BF6D7A621C7CC6300723AB0 /* UIViewController.swift in Sources */,
 				0427342621BD4BA6004B1FCC /* Status.swift in Sources */,
 				04501A6221B431D0000A0C18 /* LoginViewController.swift in Sources */,
+				4999EA6321E28ACD001F7B02 /* ProductListDetailCustomCell.swift in Sources */,
+				49D8190E21E1111600E7386F /* SalesFilterController.swift in Sources */,
 				492BB14821DBCFA500075915 /* ProductListForInvoiceController.swift in Sources */,
 				492BB14421DB6A4300075915 /* Controller.swift in Sources */,
 				7B4BE9AB21D575C600259DC2 /* Mark.swift in Sources */,
@@ -444,6 +459,7 @@
 				492BB14621DB98AE00075915 /* UINavigationController.swift in Sources */,
 				0412C53321C58C1500D1774E /* SalesListController.swift in Sources */,
 				04ED987D21BD76C4003488AC /* ManagerAccountController.swift in Sources */,
+				49A3653021DCF66E00C99C30 /* UITableViewController.swift in Sources */,
 				0433141021AB0B930001A93C /* ProductCellCustom.swift in Sources */,
 				4905050021D949C000060FD7 /* Main.swift in Sources */,
 				0453441621B85D3000660788 /* FireBaseWorker.swift in Sources */,
@@ -602,7 +618,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.oprEvgeniy.SaleManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nugumanovDmitry.SaleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -621,7 +637,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.oprEvgeniy.SaleManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nugumanovDmitry.SaleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

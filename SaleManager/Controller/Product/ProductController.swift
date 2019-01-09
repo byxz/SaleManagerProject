@@ -19,6 +19,7 @@ class ProductController: UIViewController {
         super.viewDidLoad()
         
         worker.getDataCatalog(tableView: mainTable)
+        navigationItem.title = "Каталог"
         
     }
     

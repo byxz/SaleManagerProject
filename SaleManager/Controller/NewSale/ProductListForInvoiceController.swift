@@ -9,46 +9,36 @@
 import UIKit
 import Foundation
 
+protocol CanRecieve {
+    func recieveData(data: [MainBase])
+}
+
 class ProductListForInvoiceController: UITableViewController {
     
     let worker = FireBaseWorker()
+    var itemArray = [MainBase]()
+    var delegate: CanRecieve?
     
-    //MARK: UIViewController lifecycle
+    // MARK: Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         worker.getDataCatalog(tableView: self.tableView)
+        tableView.customeStule(self.tableView)
     }
-    
-    
-    
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return worker.catalog.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! nameProductListForInvoiceCellCustome
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! NameProductListForInvoiceCellCustome
         cell.titel.text = worker.catalog[indexPath.row].titel
         cell.quantity.text = "\(worker.catalog[indexPath.row].quantity)"
         cell.price.text = worker.catalog[indexPath.row].price
-        
+        cell.configureImage(dataImage: worker.catalog[indexPath.row].image)
         cell.count.isHidden = true
-        
-        if let imageURL = URL(string: worker.catalog[indexPath.row].image) {
-            DispatchQueue.global().async {
-                let data = try? Data(contentsOf: imageURL)
-                if let data = data {
-                    let image = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        cell.imageProduct.image = image
-                        
-                    }
-                }
-            }
-        }
         
         return cell
     }
@@ -56,13 +46,22 @@ class ProductListForInvoiceController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+
+        if let cell = tableView.cellForRow(at: indexPath) {
+            if cell.accessoryType == .checkmark {
+                cell.accessoryType = .none
+            } else {
+                cell.accessoryType = .checkmark
+                print(worker.catalog[indexPath.row].titel)
+
+                itemArray.append(worker.catalog[indexPath.row])
+            }
+        }
     }
-    
-    
     
     @IBAction func done(_ sender: Any) {
-        navigationController?.dismiss(navigationController: self.navigationController!)
+        delegate?.recieveData(data: itemArray)
+        navigationController?.dismiss(self.navigationController!)
     }
-    
     
 }

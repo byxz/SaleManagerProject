@@ -137,7 +137,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle=" " id="iF8-cj-Pig">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Exit" id="T6s-mZ-i50">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="T6s-mZ-i50">
                                         <rect key="frame" x="0.0" y="490" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T6s-mZ-i50" id="IZo-p9-ut5">
@@ -156,6 +156,7 @@
                                                 <constraint firstItem="CId-g0-box" firstAttribute="centerX" secondItem="IZo-p9-ut5" secondAttribute="centerX" id="VuS-PT-RUd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -172,7 +173,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXV-SN-8ZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-495" y="25"/>
+            <point key="canvasLocation" x="-495.19999999999999" y="24.287856071964018"/>
         </scene>
     </scenes>
 </document>

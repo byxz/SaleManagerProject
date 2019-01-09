@@ -13,79 +13,72 @@ struct Sales {
     
     let ref: DatabaseReference?
     let key: String
-   // let id: Int
-    let surname: String
+    let invoiceNumber: Int
     let name: String
+    let surname: String
     let tel: String
+    let city: String
     let post: String
-    //let titel: String
-   // let quantity: Int
-    //let price: Int
-    //let profit: Int
-    //let image: String
-    //var isTrue: Bool
+    let count: Int
+    let titel: String
+    let isCompleted: Bool
     
-    init(surname: String, name: String, tel: String, post: String, key: String = "") {
+    init(invoiceNumber: Int, name: String, surname: String, tel: String, city: String, post: String, count: Int, titel: String, isCompleted: Bool, key: String = "") {
         self.ref = nil
         self.key = key
-        //self.id = id
-        self.surname = surname
+        self.invoiceNumber = invoiceNumber
         self.name = name
+        self.surname = surname
         self.tel = tel
+        self.city = city
         self.post = post
-//        self.titel = titel
-//        self.quantity = quantity
-//        self.price = price
-//        self.profit = profit
-        //self.isTrue = isTrue
+        self.count = count
+        self.titel = titel
+        self.isCompleted = isCompleted
     }
     
     init?(snapshot: DataSnapshot) {
         guard
             let value = snapshot.value as? [String: AnyObject],
-            //let id = value["id"] as? Int,
-            let surname = value["surname"] as? String,
+            let invoiceNumber = value["invoiceNumber"] as? Int,
             let name = value["name"] as? String,
+            let surname = value["surname"] as? String,
             let tel = value["tel"] as? String,
-            let post = value["post"] as? String
-//            let titel = value["titel"] as? String,
-//            let quantity = value["quantity"] as? Int,
-//            let price = value["price"] as? Int,
-//            let profit = value["profit"] as? Int
-        
-        //let isTrue = value["isTrue"] as? Bool
-        else {
-            return nil
+            let city = value["city"] as? String,
+            let post = value["post"] as? String,
+            let count = value["count"] as? Int,
+            let titel = value["titel"] as? String,
+            let isCompleted = value["isCompleted"] as? Bool
+            else {
+                return nil
         }
         
         self.ref = snapshot.ref
         self.key = snapshot.key
-        //self.id = id
-        self.surname = surname
+        self.invoiceNumber = invoiceNumber
         self.name = name
+        self.surname = surname
         self.tel = tel
+        self.city = city
         self.post = post
-//        self.titel = titel
-//        self.quantity = quantity
-//        self.price = price
-//        self.profit = profit
-        
-        //self.isTrue = isTrue
+        self.count = count
+        self.titel = titel
+        self.isCompleted = isCompleted
+
     }
     
     func toAnyObject() -> Any {
         return [
-            //"id": id,
-            "surname": surname,
-            "name": name,
-            "tel": tel,
-            "post": post,
-//            "titel": titel,
-//            "quantity": quantity,
-//            "price": price,
-//            "profit": profit,
             
-            //"isTrue": isTrue
+            "invoiceNumber": invoiceNumber,
+            "name": name,
+            "surname": surname,
+            "tel": tel,
+            "city": city,
+            "post": post,
+            "count": count,
+            "titel": titel,
+            "isCompleted": isCompleted,
         ]
     }
 }
