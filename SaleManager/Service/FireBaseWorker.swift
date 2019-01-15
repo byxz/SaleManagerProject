@@ -14,6 +14,7 @@ class FireBaseWorker {
     
     var catalog = [MainBase]()
     var sales = [Sales]()
+    var sections = [TableSection<Int, Sales>]()
     
     let catalogRef = Database.database().reference(withPath: "catalog")
     let salesRef = Database.database().reference(withPath: "sales")
@@ -59,7 +60,7 @@ class FireBaseWorker {
         
     }
     
-    func getDataSales(tableView: UITableView) {
+    func getDataSales(tableView: UITableView){
         salesRef.observe(.value, with: { snapshot in
             var newItems: [Sales] = []
             for child in snapshot.children {
@@ -69,10 +70,14 @@ class FireBaseWorker {
                 }
             }
             self.sales = newItems
+            self.sections = TableSection.group(rowItems: self.sales, by: { (headline) in
+                return headline.invoiceNumber
+            })
             tableView.reloadData()
         })
-        
     }
+    
+   
     
     func saveDataSales(surname: String, name: String, tel: String, post: String) {
         
@@ -101,7 +106,7 @@ class FireBaseWorker {
     
     
     func getData() {
-
+        
         salesRef.observe(.value, with: { snapshot in
             var newItems: [Sales] = []
             for child in snapshot.children {

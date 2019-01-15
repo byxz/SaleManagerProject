@@ -42,6 +42,8 @@
 		492BB14C21DBEE3A00075915 /* ProductListDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492BB14B21DBEE3A00075915 /* ProductListDetailController.swift */; };
 		4999EA6321E28ACD001F7B02 /* ProductListDetailCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4999EA6221E28ACD001F7B02 /* ProductListDetailCustomCell.swift */; };
 		49A3653021DCF66E00C99C30 /* UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3652F21DCF66E00C99C30 /* UITableViewController.swift */; };
+		49B1815821E91DA300193CAB /* SalesListCellCustome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1815721E91DA300193CAB /* SalesListCellCustome.swift */; };
+		49D72BF121EB5356000F83D3 /* SalesListTableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D72BF021EB5356000F83D3 /* SalesListTableSection.swift */; };
 		49D8190E21E1111600E7386F /* SalesFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8190D21E1111600E7386F /* SalesFilterController.swift */; };
 		49D8191021E117BF00E7386F /* SalesInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D8190F21E117BF00E7386F /* SalesInformationController.swift */; };
 		7B4BE9AB21D575C600259DC2 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4BE9AA21D575C600259DC2 /* Mark.swift */; };
@@ -90,6 +92,8 @@
 		492BB14B21DBEE3A00075915 /* ProductListDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDetailController.swift; sourceTree = "<group>"; };
 		4999EA6221E28ACD001F7B02 /* ProductListDetailCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListDetailCustomCell.swift; sourceTree = "<group>"; };
 		49A3652F21DCF66E00C99C30 /* UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewController.swift; sourceTree = "<group>"; };
+		49B1815721E91DA300193CAB /* SalesListCellCustome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesListCellCustome.swift; sourceTree = "<group>"; };
+		49D72BF021EB5356000F83D3 /* SalesListTableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesListTableSection.swift; sourceTree = "<group>"; };
 		49D8190D21E1111600E7386F /* SalesFilterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesFilterController.swift; sourceTree = "<group>"; };
 		49D8190F21E117BF00E7386F /* SalesInformationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesInformationController.swift; sourceTree = "<group>"; };
 		7B4BE9AA21D575C600259DC2 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
@@ -119,7 +123,9 @@
 				0412C53221C58C1500D1774E /* SalesListController.swift */,
 				49D8190F21E117BF00E7386F /* SalesInformationController.swift */,
 				49D8190D21E1111600E7386F /* SalesFilterController.swift */,
+				49B1815721E91DA300193CAB /* SalesListCellCustome.swift */,
 				0412C53421C58C2600D1774E /* SalesListController.storyboard */,
+				49D72BF021EB5356000F83D3 /* SalesListTableSection.swift */,
 			);
 			path = "Sales List";
 			sourceTree = "<group>";
@@ -443,7 +449,9 @@
 				043403A721A9D9B700F7AAE1 /* ProductController.swift in Sources */,
 				0419273F21C2E137003CC11D /* Sales.swift in Sources */,
 				043403A521A9D9B700F7AAE1 /* AppDelegate.swift in Sources */,
+				49B1815821E91DA300193CAB /* SalesListCellCustome.swift in Sources */,
 				49D8191021E117BF00E7386F /* SalesInformationController.swift in Sources */,
+				49D72BF121EB5356000F83D3 /* SalesListTableSection.swift in Sources */,
 				492BB14C21DBEE3A00075915 /* ProductListDetailController.swift in Sources */,
 				04B7589321BC5AD700ED98C7 /* AuthStoryboard.swift in Sources */,
 				04B7588821BC423A00ED98C7 /* MainBase.swift in Sources */,
@@ -618,7 +626,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nugumanovDmitry.SaleManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opr.e.SaleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,7 +645,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nugumanovDmitry.SaleManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opr.e.SaleManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

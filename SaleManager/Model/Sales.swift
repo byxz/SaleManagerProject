@@ -22,8 +22,9 @@ struct Sales {
     let count: Int
     let titel: String
     let isCompleted: Bool
+    let inArchive: Bool
     
-    init(invoiceNumber: Int, name: String, surname: String, tel: String, city: String, post: String, count: Int, titel: String, isCompleted: Bool, key: String = "") {
+    init(invoiceNumber: Int, name: String, surname: String, tel: String, city: String, post: String, count: Int, titel: String, isCompleted: Bool, inArchive: Bool, key: String = "") {
         self.ref = nil
         self.key = key
         self.invoiceNumber = invoiceNumber
@@ -35,6 +36,7 @@ struct Sales {
         self.count = count
         self.titel = titel
         self.isCompleted = isCompleted
+        self.inArchive = inArchive
     }
     
     init?(snapshot: DataSnapshot) {
@@ -48,7 +50,8 @@ struct Sales {
             let post = value["post"] as? String,
             let count = value["count"] as? Int,
             let titel = value["titel"] as? String,
-            let isCompleted = value["isCompleted"] as? Bool
+            let isCompleted = value["isCompleted"] as? Bool,
+            let inArchive = value["inArchive"] as? Bool
             else {
                 return nil
         }
@@ -64,6 +67,7 @@ struct Sales {
         self.count = count
         self.titel = titel
         self.isCompleted = isCompleted
+        self.inArchive = inArchive
 
     }
     
@@ -79,6 +83,7 @@ struct Sales {
             "count": count,
             "titel": titel,
             "isCompleted": isCompleted,
+            "inArchive": inArchive,
         ]
     }
 }
